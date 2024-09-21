@@ -9,15 +9,16 @@ import {
 } from 'wagmi/chains';
 
 export const config = getDefaultConfig({
-  appName: 'RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: 'COCswap',
+  projectId: '8022f2a30a47f2d068330f436b50c4b9',
   chains: [
     mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
+    // polygon,
+    // optimism,
+    // arbitrum,
+    // base,
+    sepolia,
+
   ],
   ssr: true,
 });
